@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/titleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/polygon" />
+
+                    <Space
+                        android:layout_width="155dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="결제"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/textViewAddress"
+                    android:layout_width="204dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="주소를 입력해주세요"
+                    android:textSize="12sp"
+                    android:layout_below="@id/titleLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="67dp"
+                    android:elevation="1dp"/>
+
+                <ImageView
+                    android:id="@+id/mectangle1"
+                    android:layout_width="354dp"
+                    android:layout_height="107dp"
+                    android:layout_below="@id/textViewAddress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-74dp"
+                    android:elevation="0dp"
+                    android:src="@drawable/mectangle1" />
+
+                <EditText
+                    android:id="@+id/textViewDepositTime"
+                    android:layout_width="204dp"
+                    android:layout_height="52dp"
+                    android:layout_below="@id/mectangle1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-20dp"
+                    android:layout_weight="1"
+                    android:elevation="1dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="입금 시간을 입력해주세요"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/mectangle2"
+                    android:layout_width="354dp"
+                    android:layout_height="107dp"
+                    android:layout_below="@id/textViewDepositTime"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-72dp"
+                    android:elevation="0dp"
+                    android:src="@drawable/mectangle2" />
+
+                <EditText
+                    android:id="@+id/textViewAccountNumber"
+                    android:layout_width="204dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="계좌번호를 입력해주세요"
+                    android:textSize="12sp"
+                    android:layout_below="@id/mectangle2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:elevation="1dp" />
+
+                <ImageView
+                    android:id="@+id/mectangle3"
+                    android:layout_width="354dp"
+                    android:layout_height="107dp"
+                    android:layout_below="@id/textViewAccountNumber"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-69dp"
+                    android:elevation="0dp"
+                    android:src="@drawable/mectangle3" />
+
+                <EditText
+                    android:id="@+id/textViewSellerNote"
+                    android:layout_width="312dp"
+                    android:layout_height="51dp"
+                    android:layout_below="@id/mectangle3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-16dp"
+                    android:layout_weight="1"
+                    android:elevation="1dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="기타 판매자에게 전달하고자 하는 말이 있으면 작성해주세요"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/mectangle4"
+                    android:layout_width="354dp"
+                    android:layout_height="144dp"
+                    android:layout_below="@id/textViewSellerNote"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-79dp"
+                    android:elevation="0dp"
+                    android:src="@drawable/mectangle4" />
+
+                <TextView
+                    android:id="@+id/gjfkr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mectangle1"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="267dp"
+                    android:layout_marginEnd="-453dp"
+                    android:layout_toStartOf="@id/gectangle2"
+                    android:layout_toEndOf="@id/gectangle1"
+                    android:elevation="1dp"
+                    android:text="개인정보 제 3자 제공 동의\n구매 유의사항 확인"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/gectangle1"
+                    android:layout_width="50dp"
+                    android:layout_height="17dp"
+                    android:layout_below="@id/mectangle4"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="-53dp"
+                    android:layout_toStartOf="@id/line"
+                    android:elevation="1dp"
+                    android:src="@drawable/gectangle1" />
+
+                <ImageView
+                    android:id="@+id/gectangle2"
+                    android:layout_width="50dp"
+                    android:layout_height="17dp"
+                    android:layout_below="@id/mectangle4"
+                    android:layout_marginStart="-355dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/line"
+                    android:elevation="1dp"
+                    android:src="@drawable/gectangle2" />
+
+                <FrameLayout
+                    android:layout_width="268dp"
+                    android:layout_height="133dp"
+                    android:layout_below="@id/gectangle2"
+                    android:layout_marginTop="101dp"
+                    android:elevation="1dp"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/rrectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rrectangle" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/textViewCompleted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="입금완료"
+                            android:textSize="40sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewClick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Click"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <ImageView
+                    android:id="@+id/line"
+                    android:layout_width="357dp"
+                    android:layout_height="156dp"
+                    android:layout_below="@id/textViewSellerNote"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:elevation="0dp"
+                    android:src="@drawable/line" />
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+   </ androidx.constraintlayout.widget.ConstraintLayout>
